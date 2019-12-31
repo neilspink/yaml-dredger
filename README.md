@@ -1,6 +1,6 @@
-#Analyse YAML document structure
+# Analyse YAML document structure
 
-Have you ever had 1000+ YAML files and needed to know the common data structure?
+This utility can analyse the data structure of a large set of YAML files. It will provide a list of the entities, their attributes and relation to other entities. 
 
 Start by running:
 
