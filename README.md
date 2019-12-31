@@ -28,9 +28,14 @@ info:
   gender: male
   match_type: T20
   overs: 20
+  player_of_match:
+    - KP Pietersen
   teams:
     - England
     - Australia
+  umpires:
+    - NJ Llong
+    - JW Lloyds
   venue: The Rose Bowl
 innings:
   - 1st innings:
@@ -44,25 +49,49 @@ innings:
               batsman: 0
               extras: 0
               total: 0
+        - 0.2:
+            batsman: ME Trescothick
+            bowler: B Lee
+            non_striker: GO Jones
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
 ```
 
 Run this program on your directory of data and get a read of the entities, attributes and their relations. An Entity is marked with a star *, you get the data type and number of occurrences.
 
 ```
 /usr/bin/node /home/neil/WebstormProjects/cleandata/app.js
- meta * 
+ meta * 1
 -- data_version (number) 3088
 -- created (date) 3088
 -- revision (number) 3088
- info * 
+ info * 1
 -- city (string) 2591
+-- dates * 3088
+---- value (variant) 3088
 -- gender (string) 3088
 -- match_type (string) 3088
--- venue (string) 3088
 -- overs (number) 2656
--- neutral_venue (number) 716
--- match_type_number (number) 428
+-- player_of_match * 2849
+---- value (string) 2849
 -- teams * 3088
 ---- value (string) 3088
+-- umpires * 3083
+---- value (string) 3083
+-- venue (string) 3088
+ innings * 1
+-- value (string) 3088
+-- team (string) 3088
+-- deliveries * 3088
+---- value (string) 3088
+---- batsman (string) 3088
+---- bowler (string) 3088
+---- non_striker (string) 3088
+---- runs * 3088
+------ batsman (number) 3088
+------ extras (number) 3088
+------ total (number) 3088
 ```
 
