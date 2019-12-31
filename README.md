@@ -57,6 +57,7 @@ innings:
               batsman: 1
               extras: 0
               total: 1
+        ...
 ```
 
 Run this program on your directory of data and get a read of the entities, attributes and their relations. An Entity is marked with a star *, you get the data type and number of occurrences.
@@ -93,5 +94,6 @@ Run this program on your directory of data and get a read of the entities, attri
 ------ batsman (number) 3088
 ------ extras (number) 3088
 ------ total (number) 3088
+...
 ```
 
